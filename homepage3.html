@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#clouds-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(30%);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 10px 20px;
+    color: #004d80;
+    padding-right: 720px;
+    width: 100%;
+    
+
+}
+.protfolio-container{
+    min-height:100vh;
+    width: 100%;
+    display: flex;
+}
+.navlist{
+    display: flex;
+    gap:3.5rem;
+    height: 10vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: #004d80;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color:#fff;
+    position: relative;
+    
+}
+
+.nav-button1 .btn, .nav-button2 .btn {
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.nav-button1 .btn:hover, .nav-button2 .btn:hover {
+    background: #004d80;
+}
+
+.btn {
+    background: transparent;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+.container_box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.remove-padding {
+    padding: 0;
+}
+
+.icn {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.search_btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #082b71;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.search_btn:hover {
+    background-color: #1a63b0;
+}
+
+.jp-form {
+    background: #00000052;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.09);
+}
+
+.form-swap {
+    margin-bottom: 15px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #004d80;
+    border-radius: 4px;
+}
+
+.form-group label {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #999;
+}
+
+.checkboxes {
+    margin: 10px 0;
+}
+
+.checkboxes label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+    </style>
+</head>
+<body> 
+    <nav>
+        <a href="/">
+            <img src="railwaylogo.jpg" width="50" height="50" alt="Railway Logo">
+        </a>    
+
+        <h2>RAILWAY</h2>
+    </nav>
+    <div class="protfolio-container">
+        <ul class="navlist">
+            <li><a href="#"><img src="main-menu.png" height="15px"  width="15px"></a></li>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Contact US</a></li>
+            <li><a href="#">Help & support</a></li>
+            <li><a href="complaint.html">Complaint</a></li>
+
+            <div class="nav-button1">
+                <button class="btn " id="loginBtn" onclick="login()" >Sign In</button>
+            </div>
+            <div class="nav-button2">   
+                <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
+            </div>
+           
+        </ul>
+        </div>
+        <video autoplay muted loop id="clouds-video">
+            <source src="Vande Bharat Express.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="container_box">
+            <div class="row">
+                <div class="col-sm-6 remove-padding">
+                    <div class="hidden-xs">
+                        <div class="text-center pull-left" style="width: 49.5%;">
+                            <span class="icn" style="width: 10%;">
+                                <img src="C:\Users\Asus\Downloads\pnr.png" alt="Pnr Icon" style="width: 25px;">
+                            </span>
+                            <a href=# target="_blank" aria-label="PNR Status opens a new window" rel="noopener noreferrer">
+                                <label class="search_btn">PNR STATUS</label>
+                            </a>
+                        </div>
+                        <div class="text-center pull-right" style="width: 49.5%;">
+                            <span class="icn" style="width: 10%;">
+                                <img src="C:\Users\Asus\Downloads\chart.png" alt="Chart Icon" style="width: 25px;">
+                            </span>
+                            <a href=# target="_blank" aria-label="Reservation Chart. Website will be opened in new tab" rel="noopener noreferrer">
+                                <label class="search_btn">CHARTS / VACANCY</label>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="jp-form">
+                        <div class="loginhead hidden-xs">
+                            <label class="heading-font">BOOK TICKET</label>
+                        </div>
+                        <form novalidate="">
+                            <div class="form-swap">
+                                <div class="col-md-7 col-xs-12 remove-padding">
+                                    <div class="form-group ui-float-label">
+                                        <span class="icn">
+                                            <i class="fa fa-location-arrow"></i>
+                                        </span>
+                                        <input type="text" id="origin" placeholder="From" required>
+                                    </div>
+                                    <div class="form-group ui-float-label">
+                                        <span class="icn">
+                                            <i class="fa fa-map-marker"></i>
+                                        </span>
+                                        <input type="text" id="destination" placeholder="To" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-xs-12 remove-padding">
+                                    <div class="form-group ui-float-label">
+                                        <span class="icn">
+                                            <i class="fa fa-calendar"></i>
+                                        </span>
+                                        <input type="date" id="jDate" required>
+                                        <label for="jDate">DD/MM/YYYY *</label>
+                                    </div>
+                                    <div class="form-group">
+                                        <span class="icn">
+                                            <i class="fa fa-briefcase"></i>
+                                        </span>
+                                        <select id="journeyClass">
+                                            <option value="all">All Classes</option>
+                                            <option value="sleeper">Sleeper</option>
+                                            <option value="3ac">3AC</option>
+                                            <option value="2ac">2AC</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="form-swap">
+                                <div class="col-md-7 col-xs-12 remove-padding">
+                                    <span class="icn">
+                                        <i class="fa fa-th-large"></i>
+                                    </span>
+                                    <div class="form-group">
+                                        <select id="journeyQuota">
+                                            <option value="general">GENERAL</option>
+                                            <option value="ladies">LADIES</option>
+                                            <option value="senior">SENIOR CITIZEN</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="checkboxes">
+                                <label><input type="checkbox" id="concessionBooking"> Person With Disability Concession</label>
+                                <label><input type="checkbox" id="dateSpecific"> Flexible With Date</label>
+                                <label><input type="checkbox" id="availableBerth"> Train with Available Berth</label>
+                                <label><input type="checkbox" id="passBooking"> Railway Pass Concession</label>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="search_btn">Search</button>
+                                <button type="button" class="search_btn" style="width: auto;">Easy Booking CHATBOT</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-sm-6 remove-padding hidden-xs"></div>
+            </div>
+        </div>
+    </body>
+    </html>
