@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="try1.css">
+    <title>Train Ticket Booking</title>
+</head>
+<body>
+    
+    
+    <div class="banner">
+        <div class="banner-top">
+            <img src="C:\Users\Asus\Downloads\WhatsApp Image 2024-10-26 at 22.33.29_ba6a7f79.jpg" alt="Logo" class="banner-logo"> 
+            <div class="title"><b>RAILWAYS</b></div>
+        </div>
+        <div class="banner-bottom">
+            <img src="D:\Usha\532-5328945_menu-bar-icon-white-clipart-png-download-menu-removebg-preview.png" alt="Banner Image" class="banner-image"> 
+            
+            <div class="auth-buttons">
+                <a href="carevoa.html"><button class="rounded">Sign Up</button></a>
+                <a href="carevoa.html"><button class="rounded">Sign In</button></a>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 remove-padding">
+                
+                <div class="jp-form">
+                    <div class="hidden-xs">
+                        <div class="text-center pull-left" style="width: 49.5%;">
+                            <span class="icn" style="width: 10%;">
+                                <img src="C:\Users\Asus\Downloads\pnr.png" alt="Pnr Icon" style="width: 25px;">
+                            </span>
+                            <a href="#">
+                                <button class="search_btn">PNR STATUS</button>
+                            </a>
+                        </div>
+                        <div class="text-center pull-right" style="width: 49.5%;">
+                            <span class="icn" style="width: 10%;">
+                                <img src="C:\Users\Asus\Downloads\chart.png" alt="Chart Icon" style="width: 25px;">
+                            </span>
+                            <a href="#">
+                                <button class="search_btn">CHARTS/ VACANCY</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="loginhead hidden-xs">
+                        <label class="heading-font">BOOK TICKET</label>
+                    </div>
+                    <form novalidate="">
+                        <div class="form-swap">
+                            <div class="col-md-7 col-xs-12 remove-padding">
+                                <div class="form-group ui-float-label">
+                                    <span class="icn">
+                                        <i class="fa fa-location-arrow"></i>
+                                    </span>
+                                    <input type="text" id="origin" placeholder="From" required>
+                                </div>
+                                <div class="form-group ui-float-label">
+                                    <span class="icn">
+                                        <i class="fa fa-map-marker"></i>
+                                    </span>
+                                    <input type="text" id="destination" placeholder="To" required>
+                                </div>
+                            </div>
+                            <div class="col-md-5 col-xs-12 remove-padding">
+                                <div class="form-group ui-float-label">
+                                    <span class="icn">
+                                        <i class="fa fa-calendar"></i>
+                                    </span>
+                                    <input type="date" id="jDate" required>
+                                    <label for="jDate">DD/MM/YYYY *</label>
+                                </div>
+                                <div class="form-group">
+                                    <span class="icn">
+                                        <i class="fa fa-briefcase"></i>
+                                    </span>
+                                    <select id="journeyClass">
+                                        <option value="all">All Classes</option>
+                                        <option value="sleeper">Sleeper</option>
+                                        <option value="3ac">3AC</option>
+                                        <option value="2ac">2AC</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-swap">
+                            <div class="col-md-7 col-xs-12 remove-padding">
+                                <span class="icn">
+                                    <i class="fa fa-th-large"></i>
+                                </span>
+                                <div class="form-group">
+                                    <select id="journeyQuota">
+                                        <option value="general">GENERAL</option>
+                                        <option value="ladies">LADIES</option>
+                                        <option value="senior">SENIOR CITIZEN</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkboxes">
+                            <label><input type="checkbox" id="concessionBooking"> Person With Disability Concession</label>
+                            <label><input type="checkbox" id="dateSpecific"> Flexible With Date</label>
+                            <label><input type="checkbox" id="availableBerth"> Train with Available Berth</label>
+                            <label><input type="checkbox" id="passBooking"> Railway Pass Concession</label>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="search_btn">Search</button>
+                            <a href="main.html"><button type="button" class="search_btn" style="width: auto;">COMPLAINT</button></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="mt-15 xl:m-0 xl:pt-30 xl:pb-20">
+        <h2 class="section-title">Why Book Trains With ixigo?</h2>
+        <div class="relative w-full">
+            <div class="scroll">
+                <div class="image-card">
+                    <img alt="IRCTC Authorised Partner" title="IRCTC Authorised Partner" loading="eager" width="295" height="100" decoding="async" src="D:\Usha\irctc.webp">
+                </div>
+               
+                <div class="image-card">
+                    <img alt="Enjoy free cancellation with Assured" title="Enjoy free cancellation with Assured" loading="eager" width="295" height="100" decoding="async" src="D:\Usha\freecancellation.webp">
+                </div>
+                
+                <div class="image-card">
+                    <img alt="Enjoy ₹0 payment gateway fee via UPI" title="Enjoy ₹0 payment gateway fee via UPI" loading="eager" width="295" height="100" decoding="async" src="D:\Usha\enjoy0.webp">
+                </div>
+                
+                <div class="image-card">
+                    <img alt="Instant Refund on booking cancellation" title="Instant Refund on booking cancellation" loading="eager" width="295" height="100" decoding="async" src="D:\Usha\instantrefund.webp">
+                </div>
+                
+                <div class="image-card">
+                    <img alt="24x7 customer support" title="24x7 customer support" loading="eager" width="295" height="100" decoding="async" src="D:\Usha\24x7.webp">
+                </div>
+                
+                <div class="image-card">
+                    <img alt="IRCTC Authorised Partner" title="IRCTC Authorised Partner" loading="eager" width="295" height="100" decoding="async" src="D:\Usha\irctc.webp">
+                </div>
+               
+                <div class="image-card">
+                    <img alt="Enjoy free cancellation with Assured" title="Enjoy free cancellation with Assured" loading="eager" width="295" height="100" decoding="async" src="D:\Usha\freecancellation.webp">
+                </div>
+               
+                <div class="image-card">
+                    <img alt="Enjoy ₹0 payment gateway fee via UPI" title="Enjoy ₹0 payment gateway fee via UPI" loading="eager" width="295" height="100" decoding="async" src="D:\Usha\enjoy0.webp">
+                </div>
+               
+                <div class="image-card">
+                    <img alt="Instant Refund on booking cancellation" title="Instant Refund on booking cancellation" loading="eager" width="295" height="100" decoding="async" src="D:\Usha\instantrefund.webp">
+                </div>
+                
+                <div class="image-card">
+                    <img alt="24x7 customer support" title="24x7 customer support" loading="eager" width="295" height="100" decoding="async" src="D:\Usha\24x7.webp">
+                </div>
+                <div class="image-card">
+                    <img alt="Enjoy ₹0 payment gateway fee via UPI" title="Enjoy ₹0 payment gateway fee via UPI" loading="eager" width="295" height="100" decoding="async" src="D:\Usha\enjoy0.webp">
+                </div>
+            </div>
+            <button class="scroll-btn">
+                <div class="scroll-icon">
+                    <svg width="1em" height="1em" font-size="1.5rem" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M15.2875 17.7707c-.2905.2983-.7699.3066-1.0708.0187L8.7313 12.54A.7474.7474 0 0 1 8.5 12a.7474.7474 0 0 1 .2313-.54l5.4854-5.2494c.3009-.288.7803-.2796 1.0708.0187a.746.746 0 0 1-.0188 1.0613L10.3476 12l4.9211 4.7094a.7459.7459 0 0 1 .0188 1.0613Z" clip-rule="evenodd"></path>
+                    </svg>
+                </div>
+            </button>
+        </div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="video-background">
+            <video autoplay muted loop class="background-video">
+                <source src="C:\Users\Asus\Downloads\Vande Bharat Express.mp4" type="video/mp4"> 
+            </video>
+            <div class="overlay">
+                <div class="container">
+                    <h2>Welcome to Our Railway System</h2>
+                    <p>Contact us for any query.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="footer-container">
+           
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Your Railway Site is your trusted platform for easy railway booking, schedules, and travel tips. We ensure a seamless experience for all your travel needs.</p>
+            </div>
+    
+        
+            <div class="footer-support">
+                <h3>Customer Support</h3>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#">Cancellation Policy</a></li>
+                    <li><a href="#">Train Timetable</a></li>
+                </ul>
+            </div>
+    
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Book a Ticket</a></li>
+                    <li><a href="#">Train Status</a></li>
+                    <li><a href="#">Special Offers</a></li>
+                </ul>
+            </div>
+    
+
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><strong>Email:</strong> support@yourrailwaysite.com</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Address:</strong> 123 Railway Street, City, Country</p>
+            </div>
+    
+
+            <div class="footer-social">
+                <h3>Connect with Us</h3>
+                <ul>
+                    <li><a href="https://facebook.com/">Facebook</a></li>
+                    <li><a href="https://instagram.com/">Instagram</a></li>
+                    <li><a href="https://twitter.com/">Twitter</a></li>
+                    <li><a href="https://youtube.com/">YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <br>
+        <p>&copy; 2024 Railway Company. All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+<script src="https://files.bpcontent.cloud/2024/10/27/13/20241027134834-6JA9DQE0.js"></script>
+</html>
